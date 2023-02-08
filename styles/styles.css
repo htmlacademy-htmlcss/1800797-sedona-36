@@ -275,6 +275,14 @@ body {
   text-decoration: none;
 }
 
+.pagination-button-dot{
+  font-weight: 400;
+  color: #000000;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #FFFFFF;
+}
+
 /* footer */
 
 .footer-subscribe-pic {
