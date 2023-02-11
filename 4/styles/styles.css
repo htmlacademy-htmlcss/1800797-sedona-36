@@ -19,7 +19,16 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 1200px;
   background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -28,7 +37,23 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
 
 .nav-list {
   margin: 0;
@@ -79,7 +104,11 @@ body {
 .hero-index {
   background-image: url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-color: #6999c1;
+  padding: 50px 0 77px;
+  text-align: center;
+
 }
 
 .sedona-title {
@@ -214,6 +243,7 @@ body {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .result-list {
@@ -254,7 +284,7 @@ body {
 }
 
 .text-hotel-price {
-  text-align: right;;
+  text-align: right;
 }
 
 .card-rating {
