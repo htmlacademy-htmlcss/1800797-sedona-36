@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -29,6 +33,8 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
@@ -38,6 +44,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -55,10 +62,21 @@ body {
 
 /* header */
 
+.navigation {
+  display: flex;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
 .nav-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 440px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-link {
@@ -68,13 +86,22 @@ body {
   line-height: 24px;
   text-decoration: none;
   text-align: center;
+}
 
+.nav-item {
 }
 
 .nav-user {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 312px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
 }
 
 .user-link {
@@ -83,6 +110,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+}
+
+.user-item {
+
 }
 
 .user-number {
@@ -97,9 +128,14 @@ body {
 .user-button {
   text-transform: uppercase;
   background: #756157;
+  border-radius: 4px;
 }
 
 /* main */
+
+.main-index {
+  flex-grow: 1;
+}
 
 .hero-index {
   background-image: url("../images/index/index-background.jpg");
@@ -107,8 +143,15 @@ body {
   background-size: cover;
   background-color: #6999c1;
   padding: 50px 0 77px;
-  text-align: center;
+}
 
+.hero-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.benefits {
+  padding-top: 75px;
 }
 
 .sedona-title {
@@ -121,6 +164,12 @@ body {
   text-decoration: none;
 }
 
+.sedona-title-benefits {
+  margin: 0 auto 24px;
+  padding: 0;
+  width: 650px;
+}
+
 .sedona-text {
   font-weight: 400;
   font-size: 22px;
@@ -128,15 +177,32 @@ body {
   text-align: center;
 }
 
+.sedona-text-benefits {
+  margin: 0 auto 89px;
+  padding: 0;
+  width: 700px;
+}
+
 .benefits-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.benefits-item {
+  width: 400px;
+  box-sizing: border-box;
+}
+
 
 .benefits-theme {
   color: #ffffff;
   background-color: #82B3D3;
+  display: flex;
+  width: 1200px;
+  justify-content: space-evenly;
 }
 
 .text-uppercase {
@@ -151,6 +217,16 @@ body {
 
 .text-light {
   color: #ffffff;
+}
+
+.text-uppercase-benefits {
+  width: 190px;
+  margin: 0 auto;
+}
+
+.text-lowercase-benefits {
+  width: 240px;
+  margin: 0 auto;
 }
 
 .text-lowercase {
@@ -168,17 +244,71 @@ body {
   text-decoration: none;
 }
 
+.comfort {
+  padding-top: 64px;
+}
+
+.sedona-title-comfort {
+  margin: 0 auto 1px;
+  padding: 0;
+  width: 510px;
+}
+
+.sedona-text-comfort {
+  margin: 0 auto 20px;
+  padding: 0;
+  width: 500px;
+}
+
 .comfort-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-lowercase-comfort {
+  margin: 0 auto;
+  padding: 0;
+  width: 230px;
+}
+
+.interest-link {
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  width: 376px;
 }
 
 .background-grey {
   background-color: #756157;
 }
 
+.interest {
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sedona-title-interest {
+  margin: 0 auto 20px;
+  padding: 0;
+  width: 330px;
+}
+
+.sedona-text-interest {
+  margin: 0 auto 63px;
+  padding: 0;
+  width: 620px;
+}
+
 /* catalog */
+
+.catalog-main {
+  flex-grow: 1;
+}
 
 .catalog-photowrapper {
   background-image: url("../images/catalog/form-background.jpg");
@@ -244,6 +374,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
+  border: none;
 }
 
 .result-list {
@@ -257,6 +388,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #7DB54F;
+  border-radius: 4px;
 }
 
 .button-grey {
@@ -320,12 +452,21 @@ body {
   background-image: url(../images/footer/Subscribe.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 104px;
 }
 
-.social-list {
+.sedona-title-footer {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+}
+
+.sedona-text-footer {
+  margin: 0;
+  padding: 0;
+  width: 475px;
 }
 
 .footer-input {
@@ -333,6 +474,28 @@ body {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
+  width: 452px;
+}
+
+.button-footer {
+  border-radius: 0px 4px 4px 0px;
+  padding: 8px 50px;
+}
+
+.footer-social {
+  display: flex;
+  padding: 40px 70px;
+  align-items: baseline;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-right: 41px;
 }
 
 .footer-phone {
@@ -343,4 +506,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  width: 340px;
+  padding: 5px 194px;
+}
+
+.footer-logo {
+  margin-left: auto;
 }
