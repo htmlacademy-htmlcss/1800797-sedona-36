@@ -38,7 +38,7 @@ body {
 }
 
 .button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -89,6 +89,7 @@ body {
 }
 
 .nav-item {
+
 }
 
 .nav-user {
@@ -315,6 +316,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color:#756157;
+  padding: 35px 70px 70px;
 }
 
 .catalog-title {
@@ -322,6 +324,8 @@ body {
   color: #ffffff;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-list {
@@ -336,6 +340,30 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.form-hotel {
+  display: flex;
+}
+
+.form-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-group {
+  width: 151px;
+  margin-right: 70px;
+}
+
+.form-group-cost {
+  width: 290px;
+  margin-left: 70px;
+}
+
+.range-block {
+  width: 200px;
 }
 
 .form-legend {
@@ -360,10 +388,15 @@ body {
   color: #000000;
 }
 
+.catalog-button-group {
+  margin-left: auto;
+}
+
 .button-catalog {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 20px;
 }
 
 .button-reset {
@@ -377,38 +410,61 @@ body {
   border: none;
 }
 
-.result-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .button-card-current {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background-color: #7DB54F;
   border-radius: 4px;
+  padding: 8px 18px;
 }
 
 .button-grey {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #756157;
+  padding: 8px 26px;
+}
+
+.result {
+
 }
 
 .hotel-title {
   text-align: start;
+  width: 340px;
+  margin: 0;
+  padding: 0;
+  margin-right: 192px;
+}
+
+.result-wrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.result-select {
+  width: 300px;
 }
 
 .result-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-left: auto;
 }
 
 .card-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .card-link {
@@ -431,10 +487,20 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  width: 300px;
 }
 
 .pagination-link {
   text-decoration: none;
+}
+
+.pagination-button-current {
+  font-weight: 400;
+  color: #000000;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #f2f2f2;
 }
 
 .pagination-button-dot {
@@ -442,7 +508,7 @@ body {
   color: #000000;
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* footer */
@@ -458,15 +524,25 @@ body {
   padding: 94px 104px;
 }
 
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 104px;
+}
+
 .sedona-title-footer {
   margin: 0;
   padding: 0;
+  width: 410px;
+  margin-bottom: 20px;
 }
 
 .sedona-text-footer {
   margin: 0;
   padding: 0;
   width: 475px;
+  margin-bottom: 54px;
 }
 
 .footer-input {
