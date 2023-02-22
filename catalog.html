@@ -36,9 +36,11 @@
             </a>
           </li>
           <li class="user-item">
-            <a href="#" class="user-link">
-              <span class="user-button">Хочу сюда!</span>
-            </a>
+            <li class="user-item">
+              <li class="user-item">
+                <a href="#" class="user-button">Хочу сюда!</a>
+              </li>
+            </li>
           </li>
         </ul>
       </nav>
@@ -95,7 +97,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-group">
+          <fieldset class="form-group form-group-cost">
             <legend class="form-legend">Стоимость, ₽:</legend>
             <div class="input-container">
               <label for="mincost" class="form-from-before">от</label>
@@ -115,12 +117,15 @@
               </div>
             </div>
           </fieldset>
-          <button class="button button-catalog" type="submit">Применить</button>
-          <button class="button-reset" type="reset">сбросить</button>
+          <div class="catalog-button-group">
+            <button class="button button-catalog" type="submit">Применить</button>
+            <button class="button-reset" type="reset">сбросить</button>
+          </div>
         </form>
       </section>
       </div>
       <section class="result">
+        <div class="result-wrapper">
         <h2 class="sedona-title hotel-title">Найдено гостиниц: 38</h2>
         <select class="result-select">
           <option value="cheap">Сначала дешевые</option>
@@ -144,6 +149,8 @@
             </button>
           </li>
         </ul>
+        </div>
+        <div class="card-wrapper">
         <ul class="card-list">
           <li class="card-item">
             <a class="card-link" href="#">
@@ -202,55 +209,45 @@
               <span class="card-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
+        </div>
       </section>
       <section class="pagination">
         <h2 class="visually-hidden">Пагинация</h2>
         <ul class="pagination-list">
-          <li class="pagination-list">
-            <a class="pagination-link">
-              <span class="button pagination-button-current">1</span>
+          <li class="pagination-item">
+            <a class="pagination-link button pagination-button-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link button" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link button" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link button" href="#">4</a>
             </a>
           </li>
-          <li class="pagination-list">
-            <a class="pagination-link" href="#">
-              <span class="button pagination-button">2</span>
-            </a>
+          <li class="pagination-item">
+            <a class="pagination-link button pagination-button-dot" href="#">...</a>
           </li>
-          <li class="pagination-list">
-            <a class="pagination-link" href="#">
-              <span class="button pagination-button">3</span>
-            </a>
-          </li>
-          <li class="pagination-list">
-            <a class="pagination-link" href="#">
-              <span class="button pagination-button">4</span>
-            </a>
-          </li>
-          <li class="pagination-list">
-            <a class="pagination-link" href="#">
-              <span class="button pagination-button-dot">...</span>
-            </a>
-          </li>
-          <li class="pagination-list">
-            <a class="pagination-link" href="#">
-              <span class="button pagination-button">10</span>
-            </a>
+          <li class="pagination-item">
+            <a class="pagination-link button pagination-button-last" href="#">10</a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer footer-light">
       <section class="footer-subscribe">
-        <h3 class="sedona-title">Подпишитесь на рассылку</h3>
-        <p class="sedona-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h3 class="sedona-title sedona-title-footer">Подпишитесь на рассылку</h3>
+        <p class="sedona-text sedona-text-footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="footer-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="footer-label" for="mail"></label>
           <input class="footer-input" id="mail" type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="button button-footer">Подписаться</button>
+          <button class="button button-footer text-midcase">Подписаться</button>
         </form>
       </section>
       <section class="footer-social">
-        <h2 class="visually hidden">Футер</h2>
+        <h2 class="visually-hidden">Футер</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
