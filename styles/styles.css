@@ -38,6 +38,7 @@ body {
 /* button */
 
 .button {
+  font-family: "PT Sans", sans-serif;
   background-color: #82b3d3;
   color: #ffffff;
   text-align: center;
@@ -45,6 +46,7 @@ body {
   text-decoration: none;
   border: none;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -64,8 +66,9 @@ body {
 
 .navigation {
   display: flex;
-  padding-right: 70px;
-  padding-left: 70px;
+  margin: 0 auto;
+  width: 1060px;
+  align-items: flex-start;
 }
 
 .nav-list {
@@ -86,7 +89,7 @@ body {
   text-decoration: none;
   text-align: center;
   display: block;
-  padding: 16px 20px;
+  padding: 20px 16px;
 }
 
 .nav-item {
@@ -219,6 +222,10 @@ body {
   padding: 0;
 }
 
+.benefits-item-colored {
+  background-color: #83b3d333;
+}
+
 .benefits-wrapper {
   width: 400px;
   padding-top: 101px;
@@ -259,9 +266,15 @@ body {
   text-align: center;
 }
 
+.index-img {
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
+}
 
 .benefits-img {
   display: block;
+  width: auto;
   height: 100%;
 }
 
@@ -442,7 +455,8 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 20px;
+  padding: 8px 50px;
+  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -454,15 +468,7 @@ body {
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-}
-
-.button-card-current {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  background-color: #7DB54F;
-  border-radius: 4px;
-  padding: 8px 18px;
+  padding: 8px 57px;
 }
 
 .button-grey {
@@ -538,17 +544,46 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   padding: 20px;
-  padding-bottom: 16px;
 }
 
-.card-link {
-  display: block;
-  text-align: center;
-  text-decoration: none;
+.card-img {
+  margin-bottom: 14px;
+}
+
+.card-description {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+.text-uppercase-hotel {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  text-align: start;
+  text-transform: none;
 }
 
 .text-hotel-price {
   text-align: right;
+}
+
+.button-card {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 20px;
+  align-self: start;
+}
+
+
+.button-card-current {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #7DB54F;
+  border-radius: 4px;
+  padding: 8px 18px;
 }
 
 .card-rating {
@@ -601,6 +636,7 @@ body {
   background-color: #ffffff;
   padding: 16px 21px;
 
+
 }
 
 .pagination-button-last {
@@ -609,40 +645,33 @@ body {
 
 /* footer */
 
+.footer-subscribe {
+  padding: 96px 258px 104px;
+}
+
 .footer-subscribe-pic {
   background-color: #82b3d3;
   background-image: url(../images/footer/Subscribe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 96px;
-}
-
-.footer-subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 96px;
 }
 
 .sedona-title-footer {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 410px;
   margin-bottom: 20px;
 }
 
 .sedona-text-footer {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 475px;
   margin-bottom: 54px;
 }
 
 .footer-form {
-  margin-bottom: 104px;
+  display: flex;
 }
 
 .footer-input {
@@ -651,17 +680,22 @@ body {
   font-size: 18px;
   line-height: 24px;
   width: 452px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  border: none;
 }
 
 .button-footer {
   border-radius: 0px 4px 4px 0px;
   padding: 8px 50px;
+
 }
 
 .footer-social {
   display: flex;
   padding: 40px 70px 30px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .social-list {
@@ -671,9 +705,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 150px;
-  margin-right: 41px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-right: 35px;
 }
 
 .social-link {
@@ -691,8 +723,10 @@ body {
   text-decoration: none;
   width: 340px;
   padding: 5px 195px;
+
 }
 
 .footer-logo {
   margin-left: auto;
+  display: block;
 }
