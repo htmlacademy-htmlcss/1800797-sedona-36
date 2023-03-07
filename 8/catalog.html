@@ -38,7 +38,7 @@
             </a>
           </li>
           <li class="user-item">
-            <li class="user-item">
+            <li class="user-item user-item-button">
               <a href="#" class="user-button">Хочу сюда!</a>
             </li>
           </li>
@@ -47,6 +47,7 @@
     </header>
     <main class="catalog-main">
       <div class="catalog-photowrapper">
+        <div class="catalog-wrapper">
       <header class="catalog-header">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -67,16 +68,25 @@
             <legend class="form-legend">Инфраструктура:</legend>
             <ul class="form-list">
               <li class="form-item">
-                <label class="form-label" for="pool">Бассейн</label>
-                <input class="form-input" id="pool" name="pool" type="checkbox" checked>
+                <label class="control">
+                <input class="visually-hidden control-input" name="pool" type="checkbox" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Бассейн</span>
+                </label>
               </li>
               <li class="form-item">
-                <label class="form-label" for="parking">Парковка</label>
-                <input class="form-input" id="parking" name="parking" type="checkbox" checked>
+                <label class="control">
+                  <input class="visually-hidden  control-input" name="parking" type="checkbox" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
+                  </label>
               </li>
               <li class="form-item">
-                <label class="form-label" for="wifi">Wi-Fi</label>
-                <input class="form-input" id="wifi" name="wifi" type="checkbox">
+                <label class="control">
+                  <input class="visually-hidden control-input" name="wifi" type="checkbox">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
+                  </label>
               </li>
             </ul>
           </fieldset>
@@ -84,36 +94,46 @@
             <legend class="form-legend">Тип жилья:</legend>
             <ul class="form-list">
               <li class="form-item">
-                <label class="form-label" for="hotel">Гостиница</label>
-                <input class="form-input" id="hotel" name="type-of-housing" value="hotel" type="radio" checked>
+                <label class="control">
+                <input class="visually-hidden control-input" name="type-of-housing" value="hotel" type="radio" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
+                </label>
               </li>
               <li class="form-item">
-                <label class="form-label" for="motel">Мотель</label>
-                <input class="form-input" id="motel" name="type-of-housing" value="motel" type="radio">
+                <label class="control">
+                  <input class="visually-hidden control-input" name="type-of-housing" value="motel" type="radio">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
+                  </label>
               </li>
               <li class="form-item">
-                <label class="form-label" for="appartment">Апартаменты</label>
-                <input class="form-input" id="appartment" name="type-of-housing" value="appartment" type="radio">
+                <label class="control">
+                  <input class="visually-hidden control-input" name="type-of-housing" value="appartment" type="radio">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апартаменты</span>
+                  </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-group form-group-cost">
             <legend class="form-legend">Стоимость, ₽:</legend>
-            <div class="input-container">
-              <label for="mincost" class="form-from-before">от</label>
-              <input type="number" class="form-input" name="mincost" id="mincost" min="0" value="0">
-              <label for="maxcost" class="form-from-before">до</label>
-              <input type="number" class="form-input" name="maxcost" id="maxcost" min="0" max="9000" value="9000">
+            <div class="input-range-container">
+              <label for="mincost" class="form-from">от</label>
+              <input type="number" class="range-input" name="mincost" id="mincost" value="0">
+              <label for="maxcost" class="form-upto">до</label>
+              <input type="number" class="range-input" name="maxcost" id="maxcost" max="9000" value="9000">
             </div>
-            <div class="range-block">
-              <div class="scale">
-                <div class="range"></div>
-                <button>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0px; width: 226px">
+                <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">установить минимальную цену</span>
                 </button>
-                <button>
+                <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden">установить максимальную цену</span>
                 </button>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -121,14 +141,15 @@
             <button class="button button-catalog" type="submit">Применить</button>
             <button class="button-reset" type="reset">сбросить</button>
           </div>
+        </div>
         </form>
       </section>
       </div>
       <section class="result">
         <div class="result-wrapper">
         <h2 class="sedona-title hotel-title">Найдено гостиниц: 38</h2>
-        <select class="result-select">
-          <option value="cheap">Сначала дешевые</option>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap" selected>Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
