@@ -602,7 +602,7 @@ body {
   width: 1060px;
   margin: 0 auto;
   padding-top: 35px;
-
+  padding-bottom: 69px;
 }
 
 .catalog-title {
@@ -689,7 +689,7 @@ body {
 .form-group {
   width: 151px;
   margin: 0;
-  margin-right: 70px;
+  margin-right: 66px;
   border: none;
   padding: 0;
 }
@@ -743,8 +743,8 @@ body {
   background-position: center;
   width: 12px;
   height: 10px;
-  top: 15px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
 }
 
 .control-label {
@@ -776,7 +776,7 @@ body {
 
 .form-group-cost {
   width: 290px;
-  margin-left: 70px;
+  margin-left: 74px;
 }
 
 .range-block {
@@ -788,7 +788,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  margin-bottom: 32px
+  margin-bottom: 33px;
 }
 
 .form-label {
@@ -800,46 +800,90 @@ body {
 
 .input-range-container {
   display: flex;
-  justify-content: center;
+  margin-bottom: 45px;
+  gap: 3px;
+  width: 288px;
+  position: relative;
 }
 
 .form-from {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-align: right;
   color: #000000;
+  box-sizing: border-box;
+}
+
+.form-before {
+  position: absolute;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  top: 12px;
+  left: 106px;
 }
 
 .form-upto {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-align: right;
   color: #000000;
+  box-sizing: border-box;
 }
 
-.input-container {
-
+.form-after {
+  position: absolute;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  top: 12px;
+  left: 248px;
 }
 
-.range-input {
-  font-family: "PT Sans" sans-serif;
+.range-input-start {
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
-  width: 143px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 104px;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-input-start::-webkit-outer-spin-button,
+.range-input-start::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
+
+.range-input-end {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  width: 102px;
+}
+
+.range-input-end::-webkit-outer-spin-button,
+.range-input-end::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 
 .range-scale {
   position: relative;
@@ -886,7 +930,7 @@ body {
 }
 
 .catalog-button-group {
-  margin-top: 32px;
+  margin-top: 57px;
   margin-left: auto;
   width: 191px;
 }
@@ -998,8 +1042,7 @@ body {
 .result-wrapper {
   display: flex;
   width: 1060px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 50px auto 40px;
   align-items: center;
 }
 
@@ -1224,7 +1267,7 @@ body {
 }
 
 .pagination {
-  padding-top: 80px;
+  padding-top: 82px;
   padding-left: 70px;
 }
 
@@ -1318,7 +1361,7 @@ body {
 /* footer */
 
 .footer-subscribe {
-  padding: 96px 258px 104px;
+  padding: 98px 258px 104px;
 }
 
 .footer-subscribe-pic {
@@ -1397,7 +1440,7 @@ body {
 
 .social-link {
   display: block;
-  padding: 13px 12px;
+  padding: 14px 13px;
 }
 
 .footer-icon {
