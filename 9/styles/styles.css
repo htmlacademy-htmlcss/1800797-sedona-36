@@ -683,6 +683,7 @@ body {
 
 .form-hotel {
   display: flex;
+  flex-wrap: wrap;
 }
 
 
