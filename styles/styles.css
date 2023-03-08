@@ -726,7 +726,7 @@ body {
   opacity: 0.5;
 }
 
-.control:focus .control-mark {
+.control:focus + .control-mark {
   border: 3px solid #83b3d3;
   border-radius: 4px;
 }
@@ -769,7 +769,7 @@ body {
   content: "";
 }
 
-.control[type="radio"]:focus .control-mark {
+.control-input[type="radio"]:focus + .control-mark {
   border: 3px solid #83b3d3;
   border-radius: 18px;
 }
@@ -854,10 +854,16 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
-  width: 104px;
+  padding: 12px 40px 12px 20px;
+  width: 143px;
+  box-sizing: border-box;
+}
+
+.range-input-start:focus {
+  border: none;
+  outline: 3px solid #83b3d3;
 }
 
 .range-input-start::-webkit-outer-spin-button,
@@ -872,10 +878,15 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 20px;
   border: none;
-  border-radius: 0 4px 4px 0;
-  width: 102px;
+  padding: 12px 40px 12px 20px;
+  width: 143px;
+  box-sizing: border-box;
+}
+
+.range-input-end:focus {
+  border: none;
+  outline: 3px solid #83b3d3;
 }
 
 .range-input-end::-webkit-outer-spin-button,
