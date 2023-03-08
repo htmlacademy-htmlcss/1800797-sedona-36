@@ -879,6 +879,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   border: none;
+  border-radius: 0 4px 4px 0;
   padding: 12px 40px 12px 20px;
   width: 143px;
   box-sizing: border-box;
