@@ -202,10 +202,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.user-link:active {
-
-
-}
+.user-link:active {}
 
 .user-item-button {
   padding-left: 20px;
@@ -1553,7 +1550,7 @@ body {
   height: 100%;
   width: 100%;
   background: #f2f2f2cc;
-  display: flex;
+  display: none;
 }
 
 .modal {
@@ -1565,6 +1562,7 @@ body {
   width: 717px;
   padding: 64px 70px;
   box-sizing: border-box;
+
 }
 
 .modal-title {
@@ -1576,43 +1574,36 @@ body {
 
 .modal-close-button {
   position: absolute;
-  top: 65px;
-  right: 54px;
+  top: 64px;
+  right: 51px;
   border: none;
   border-radius: 50%;
   background-color: #f2f2f2;
-  display: block;
   padding: 0;
   margin: 0;
   width: 53px;
   height: 53px;
-}
-
-.modal-close {
-  padding: 17px 16px 16px 17px;
-  width: 14px;
-  height: 14px;
   cursor: pointer;
-  fill: #000000;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.modal-close:hover {
-  fill: #000000;
+.modal-close-button:hover {
   background-color: #e6e6e6;
 }
 
-.modal-close-button:focus {
+.modal-close {
   fill: #000000;
+}
+
+.modal-close-button:focus {
   background-color: #e6e6e6;
   outline: 3px solid #82b3d3;
 }
 
-.modal-close:active {
-  fill: #0000004d;
-  background-color: #e6e6e6;
-  outline: none;
+.modal-close-button:active .modal-close {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .modal-close-button:active {
@@ -1623,19 +1614,8 @@ body {
 .form-wrapper {
   display: grid;
   grid-template-columns: 137px 440px;
-  grid-template-areas:
-  "modal-label  modal-input"
-  ". modal-text";
   row-gap: 4px;
   position: relative;
-}
-
-.form-wrapper:last-child {
-  margin-bottom: 23px;
-}
-
-.modal-form {
-
 }
 
 .modal-label {
@@ -1645,9 +1625,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
-  grid-area: modal-label;
-  align-self: center;
-
+  align-self: start;
+  padding-top: 12px;
 }
 
 .modal-input {
@@ -1658,7 +1637,6 @@ body {
   line-height: 24px;
   text-decoration: none;
   display: block;
-  grid-area: modal-input;
   background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
@@ -1668,6 +1646,8 @@ body {
   padding-right: 54px;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .modal-input:hover {
@@ -1677,11 +1657,6 @@ body {
 .modal-input:focus {
   outline: 3px solid #83b3d3;
   background-color: #e6e6e6;
-}
-
-.modal-input:focus-within {
-  outline: 2px solid #000000;
-  background-color: #f2f2f2;
 }
 
 .input-calendar::after {
@@ -1694,6 +1669,7 @@ body {
   height: 15px;
   top: 16px;
   right: 22px;
+  opacity: 0.3;
 }
 
 .modal-text {
@@ -1703,7 +1679,6 @@ body {
   line-height: 21px;
   margin: 0;
   padding: 0;
-  grid-area: modal-text;
   margin-bottom: 23px;
   margin-left: 18px;
 }
@@ -1741,8 +1716,9 @@ body {
 }
 
 .adult-wrapper {
+  /* display: grid;
+  grid-template-columns: 137px 110px; */
   display: flex;
-
 }
 
 .children-wrapper {
@@ -1760,22 +1736,7 @@ body {
   height: 14px;
   background-position: center;
   background-repeat: no-repeat;
-  fill: #7561574d;
-  position: relative;
-  top: 1px;
-  left: 1px;
-}
-
-.minus-decoration:hover {
-  fill: #000000;
-}
-
-.minus-decoration:focus {
-
-}
-
-.minus-decoration:active {
-  fill: #7561574d;
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .form-minus {
@@ -1784,26 +1745,31 @@ body {
   padding: 14px 10px;
   border: none;
   cursor: pointer;
-  display: block;
   background-color: #f2f2f2;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .form-minus:hover .minus-decoration {
+  fill: #000000;
 }
 
 .form-minus:focus {
-  border: 3px solid #82b3d3;
-  border-radius: 4px;
   outline: none;
-  background-image: url("../images/modal/minusdark.svg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.form-minus:active {
-  border: none;
+.form-minus:focus .minus-decoration {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+  fill: #000000;
+  outline-offset: 2px;
+}
+
+.form-minus:active .minus-decoration {
+  fill: rgba(117, 97, 87, 0.3);
   outline: none;
-  background-image: url("../images/modal/minus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 
@@ -1812,21 +1778,7 @@ body {
   height: 14px;
   background-position: center;
   background-repeat: no-repeat;
-  fill: #7561574d;
-  position: relative;
-  top: 1px;
-}
-
-.plus-decoration:hover {
-  fill: #000000;
-}
-
-.plus-decoration:focus {
-
-}
-
-.plus-decoration:active {
-  fill: #7561574d;
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .form-plus {
@@ -1835,37 +1787,48 @@ body {
   padding: 14px 10px;
   border: none;
   cursor: pointer;
-  display: block;
   background-color: #f2f2f2;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-plus:hover .plus-decoration {
+  fill: #000000;
+}
+
+.form-plus:focus .plus-decoration {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+  outline-offset: 2px;
+  fill: #000000;
 }
 
 .form-plus:focus {
-  border: 3px solid #82b3d3;
-  border-radius: 4px;
   outline: none;
-  background-image: url("../images/modal/plusdark.svg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.form-plus:active {
-  border: none;
-  background-image: url("../images/modal/plus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.form-plus:active .plus-decoration {
+  fill: rgba(117, 97, 87, 0.3);
+  outline: none;
 }
 
 .form-label-icon {
   position: relative;
+  padding-right: 40px;
+}
+
+.label-children {
+  padding-top: 12px;
 }
 
 .tooltip {
   position: absolute;
   width: 26px;
   height: 26px;
-  margin-top: 10px;
-  margin-left: 60px;
+  right: 3px;
+  bottom: 1px;
 }
 
 .tooltip-toggle {
@@ -1877,6 +1840,10 @@ body {
   cursor: pointer;
 }
 
+.tooltip-toggle:focus {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+}
 
 .tooltip-icon {
   width: 100%;
@@ -1899,7 +1866,7 @@ body {
   position: absolute;
   text-align: left;
   left: -1%;
-  transform: translateX(-45%) translateY(8%);
+  transform: translateX(-45%) translateY(10%);
   display: none;
   z-index: 1;
 }
@@ -1918,54 +1885,48 @@ body {
   background-position: center;
   margin: 0 auto;
   top: -14px;
-  right: 127px;
+  right: 129px;
 }
 
-/*.form-minus {
-  width: 40px;
-  height: 48px;
-  padding: 14px 10px;
-  border: none;
-  cursor: pointer;
-  background-image: url("../images/modal/minus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  background-color: #f2f2f2;
-}
-
-.form-plus {
-  width: 40px;
-  height: 48px;
-  padding: 14px 10px;
-  border: none;
-  cursor: pointer;
-  background-image: url("../images/modal/plus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  background-color: #f2f2f2;
-}
-*/
 .quanity-input {
-  border: none;
-  width: 31px;
-  margin: 0;
-  padding: 14px 10px;
   font-family: "PT Sans" sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  border: none;
+  width: 31px;
+  margin: 0;
+  padding: 14px 10px;
   color: #000000;
   text-align: center;
   background-color: #f2f2f2;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .quanity-input::-webkit-outer-spin-button,
 .quanity-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.quanity-input:hover {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.quanity-input:focus {
+  outline: 2px solid #82b3d3;
+  border-radius: 4px;
+  outline-offset: -2px;
+}
+
+.quanity-input:active {
+  color: #000000;
+  outline: none;
+}
+
+.quanity-input:disabled {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .button-modal {
@@ -1995,5 +1956,9 @@ body {
 
 .button-modal:active {
   background-color: #68a2ca;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-container-open {
+  display: flex;
 }
