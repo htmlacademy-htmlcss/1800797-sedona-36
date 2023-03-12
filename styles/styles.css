@@ -1766,7 +1766,7 @@ body {
 
 .form-minus {
   width: 40px;
-  height: 48px;
+  height: 100%;
   padding: 14px 10px;
   border: none;
   cursor: pointer;
@@ -1808,7 +1808,7 @@ body {
 
 .form-plus {
   width: 40px;
-  height: 48px;
+  height: 100%;
   padding: 14px 10px;
   border: none;
   cursor: pointer;
