@@ -1434,6 +1434,7 @@ body {
   border: none;
   font-family: "PT Sans", sans-serif;
   cursor: pointer;
+  max-height: 52px;
 }
 
 .footer-input:hover {
@@ -1652,6 +1653,7 @@ body {
   text-decoration: none;
   align-self: start;
   padding-top: 12px;
+  max-width: 137px;
 }
 
 .modal-input {
@@ -1766,7 +1768,7 @@ body {
 
 .form-minus {
   width: 40px;
-  height: 48px;
+  height: 100%;
   padding: 14px 10px;
   border: none;
   cursor: pointer;
@@ -1808,7 +1810,7 @@ body {
 
 .form-plus {
   width: 40px;
-  height: 48px;
+  height: 100%;
   padding: 14px 10px;
   border: none;
   cursor: pointer;
