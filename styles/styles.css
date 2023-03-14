@@ -66,7 +66,8 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -859,7 +860,8 @@ body {
 
 .range-input-start::-webkit-outer-spin-button,
 .range-input-start::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -888,7 +890,8 @@ body {
 
 .range-input-end::-webkit-outer-spin-button,
 .range-input-end::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1061,7 +1064,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 12px 20px;
@@ -1954,7 +1958,8 @@ body {
 
 .quanity-input::-webkit-outer-spin-button,
 .quanity-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
