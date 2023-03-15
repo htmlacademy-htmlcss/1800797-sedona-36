@@ -573,7 +573,7 @@ body {
 }
 
 .catalog-wrapper {
-  padding: 35px 70px 69px;
+  padding: 35px 70px 70px;
   background-color: #756157;
   background-image: url("../images/catalog/form-background.jpg");
   background-repeat: no-repeat;
@@ -1911,7 +1911,6 @@ body {
   display: block;
 }
 
-
 .tooltip-text {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -2004,7 +2003,6 @@ body {
   padding-top: 18px;
   padding-bottom: 18px;
 }
-
 
 .button-modal:hover {
   background-color: #68a2ca;
