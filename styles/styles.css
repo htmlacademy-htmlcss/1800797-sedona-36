@@ -572,18 +572,12 @@ body {
   flex-grow: 1;
 }
 
-.catalog-photowrapper {
+.catalog-wrapper {
+  padding: 35px 70px 69px;
   background-color: #756157;
   background-image: url("../images/catalog/form-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.catalog-wrapper {
-  width: 1060px;
-  margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 69px;
 }
 
 .catalog-title {
@@ -919,6 +913,8 @@ body {
   height: 4px;
   background-color: #ffffff;
   opacity: 1;
+  left: 0;
+  width: 226px;
 }
 
 .range-toggle {
