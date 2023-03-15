@@ -239,11 +239,17 @@ body {
 }
 
 .user-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Вариант Актив из прежней версии проекта
+  .user-button:active {
   font-size: 0;
   background-color: #756157;
   width: 100px;
   margin-left: auto;
-}
+} */
 
 .user-button:disabled {
   background-color: #e5e5e5;
@@ -450,6 +456,10 @@ body {
   padding-bottom: 83px;
 }
 
+.comfort-item-colored {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .comfort-img-housing {
   position: relative;
 }
@@ -510,10 +520,6 @@ body {
   width: 230px;
 }
 
-.background-grey {
-  background-color: #756157;
-}
-
 /* interest*/
 
 .interest {
@@ -522,6 +528,7 @@ body {
 }
 
 .interest-link {
+  background-color: #756157;
   margin: 0 auto;
   border: none;
   display: block;
@@ -540,6 +547,11 @@ body {
 .interest-link:focus {
   background-color: #615048;
   outline: none;
+}
+
+.interest-link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .sedona-title-interest {
@@ -763,7 +775,7 @@ body {
   margin-left: 74px;
 }
 
-.range-block {
+.range-scale {
   width: 290px;
 }
 
@@ -1410,7 +1422,7 @@ body {
 
 .footer-subscribe-pic {
   background-color: #82b3d3;
-  background-image: url("../images/footer/Subscribe.jpg");
+  background-image: url("../images/footer/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
